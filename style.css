@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #11071F;
+}
+
+header {
+  height: 125px;
+  background: rgba(118, 60, 172, 0.09);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoHeader {
+  width: 47px;
+  height: 47px;
+  margin-left: 55px;
+}
+
+.navegationContainer {
+  margin-right: 52px;
+}
+
+.navegation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+
+}
+
+.navLink {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 23px;
+}
+
+.linkedin {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navLink:hover {
+  color: #FFFF00BF;
+}
+
+
+.iconHeader:hover svg {
+  fill: #FFFF00BF;
+
+}
+
+
+
+/*main*/
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+
+}
+
+.infoImage {
+  width: 566px;
+  height: 631px;
+  border-radius: 731px;
+  background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
+  display: flex;
+  /* Define o contêiner como um flex container */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente */
+  position: relative;
+  /* Para que a camada de sobreposição seja posicionada corretamente */
+  margin-left: 5rem;
+}
+
+.infoImage figure img {
+  margin: 12vh auto;
+  /* Centraliza a imagem horizontalmente */
+  display: block;
+  /* Remove qualquer espaço em branco extra abaixo da imagem */
+}
+
+
+.infoText {
+  display: flex;
+  width: 644px;
+  height: 116px;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #FFF;
+  font-size: 33px;
+  padding-left: 50px;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+#imagem {
+  width: 94px;
+  height: 94px;
+
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  font-size: 43px;
+  text-shadow: 
+  1px 1px 0px rgba(128, 0, 128, 0.5),
+  2px 2px 0px rgba(160, 32, 240, 0.5),
+  3px 3px 0px rgba(218, 112, 214, 0.5);
+  font-family: 'Preahvihear', sans-serif;
+}
+
+.aboutMe {
+  background-image: url("./public/images/bgAuboutMe.png");
+  width: 965px;
+  height: 841px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.blue {
+  color: #61DAFB; /* Define a cor azul para o texto dentro do elemento com a classe 'blue' */
+}
+
+.highlight {
+  color:#FF0; /* Define a cor amarela para o texto dentro do elemento com a classe 'highlight' */
+}
+
+.menuColors {
+  width: 965px;
+  height: 841px;
+  padding-top: 32px;
+  padding-left: 42px;
+}
+
+hr{
+  margin: 3rem  3rem ;
+}
+
+.aboutMeContent{
+  margin-top: 2rem;
+}
+
+.aboutMeContent h1 {
+  color: #FFF;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 126.664%;
+  letter-spacing: 0.9px;
+}
+
+.aboutMeContent p{
+  width: 900px;
+  color: #FFF;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 126.664%; 
+  letter-spacing: 0.5px;
+  padding-top: 2rem;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image1{
+  width: 343px;
+height: 212px;
+padding-top: 2em;
+}
+
+.image2{
+  width: 406px;
+height: 296px;
+}
