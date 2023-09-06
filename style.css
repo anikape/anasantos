@@ -190,3 +190,70 @@ padding-top: 2em;
   width: 406px;
 height: 296px;
 }
+
+.skills{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1288px;
+height: 1222px;
+border-radius: 97px;
+background: linear-gradient(96deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+margin: 8rem auto;
+}
+
+.colchetes{
+  color: #FFF;
+  
+
+}
+
+.skills h1{
+  color: #FF0;
+font-family: Poppins;
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+line-height: 32.5px;
+text-align: center;
+/* padding-top:4em; */
+}
+
+.skillsContent{
+  display: flex;
+  justify-content: center;
+   width: 1105px;
+   margin: 5rem auto;
+}
+
+.skillsContent li{
+  color:#9747FF;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 23px;
+  padding-bottom: 0.5rem;
+}
+
+.skillsContent span{
+  color: #FFFFFF;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 23px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap; /* Para que os ícones da segunda linha quebrem para a próxima linha quando não houver espaço suficiente */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 50%;
+  margin: 0 auto;
+  text-align: center; /* Centraliza o conteúdo dentro das colunas */
+}
+
+.icons img {
+  width: 99px;
+  height: 99px;
+  margin: 10px; /* Adicione margem para espaçamento entre os ícones */
+}
+
+
