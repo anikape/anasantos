@@ -256,4 +256,36 @@ text-align: center;
   margin: 10px; /* Adicione margem para espaçamento entre os ícones */
 }
 
+.contact{
+  display: flex;
+  justify-content: flex-end;
+}
 
+.contact a{
+  margin-right: 2rem;
+  padding: 2rem;
+  color: #A7A7A7;
+}
+
+.footerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  
+}
+
+.footerNav{
+  border-top: 2px solid #FFF;
+}
+
+.footerNavegation ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.footerNavegation li{
+  padding: 2rem;
+}
