@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #11071F;
+}
+
+header {
+  height: 125px;
+  background: rgba(118, 60, 172, 0.09);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoHeader {
+  width: 47px;
+  height: 47px;
+  margin-left: 55px;
+}
+
+.navegationContainer {
+  margin-right: 52px;
+}
+
+.navegation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+
+}
+
+.navLink {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 23px;
+}
+
+.linkedin {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navLink:hover {
+  color: #FFFF00BF;
+}
+
+
+.iconHeader:hover svg {
+  fill: #FFFF00BF;
+
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 856px;
+height: 873px;
+border-radius: 97px;
+background: linear-gradient(96deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*main*/
+
+main {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding-top: 5rem;
+}
+
+.phone{
+  margin-top: -10rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente no eixo X */
+  text-align: center; /* Alinha o conteúdo do formulário no centro */
+
+ 
+}
+
+.formContent{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+
+form label{
+  color: #FFF;
+font-family: Chelsea Market;
+font-size: 28px;
+font-weight: 400;
+line-height: 138.164%; /* 38.686px */
+letter-spacing: 0.56px;
+text-align: left; /* Alinhe o texto da label à esquerda */
+  width: 100%; /* Largura total para a label */
+}
+
+form input{
+  width: 705px;
+height: 55px;
+border-radius: 14px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+outline: none;
+}
+
+#message{
+  width: 705px;
+height: 151px;
+border-radius: 17px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+outline: none;
+}
+
+.submit{
+  margin-top: 20px; /* Adicione margem acima do botão para espaçamento */
+  color: #FFF;
+  font-family: Chelsea Market;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 138.164%;
+  letter-spacing: 0.6px;
+  width: 276px;
+  height: 55px;
+  border-radius: 14px;
+background: #F774FB;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+#my-form-status{
+  padding-top: 2rem;
+  color: #FFF;
+font-family: Chelsea Market;
+font-size: 30px;
+}
+
+
+.contact{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact a{
+  margin-right: 2rem;
+  padding: 2rem;
+  color: #A7A7A7;
+}
+
+.footerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  
+}
+
+.footerNav{
+  border-top: 2px solid #FFF;
+}
+
+.footerNavegation ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.footerNavegation li{
+  padding: 2rem;
+}

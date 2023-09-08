@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -108,6 +109,7 @@ align-items: center;
   grid-template-columns: repeat(3, 1fr); 
   grid-gap: 10px;
   margin: 5rem;
+  position: relative; /* Adicione esta linha */
     
 }
 
@@ -116,6 +118,7 @@ align-items: center;
   width: 375px;
   height: 535px;
   justify-content: center;
+  position: relative; /* Adicione esta linha */
 }
 
 .balls{
@@ -153,10 +156,22 @@ margin: 0 auto;
 padding-top: 1em;
 }
 
-.linksProjects{
+/* .linksProjects{
   display: flex;
   justify-content: space-around;
   padding-top: 1em;
+} */
+
+.linksProjects {
+  position: absolute; /* Adicione esta linha */
+  bottom: 10px; /* Ajuste a distância do fundo conforme necessário */
+  left: 50%; /* Centralize horizontalmente */
+  transform: translateX(-50%); /* Centralize horizontalmente */
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Certifique-se de que ocupe toda a largura dos cards */
+  padding-top: 1em;
+ 
 }
 
 .linksProjects a{
@@ -166,4 +181,86 @@ font-size: 16px;
 font-weight: 400;
 line-height: 26px; /* 162.5% */
 text-decoration-line: underline;
+
 }
+
+/*Loading animation*/
+
+.loading-container {
+  position: relative; /* Adicionado para posicionamento relativo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-circle {
+  width: 200px;
+  height: 200px;
+  border: 13px dotted #471542;
+  border-top: 5px dashed transparent;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+.loading-text {
+ 
+  position: absolute; /* Adicionado para posicionamento absoluto */
+  top: 50%; /* Ajusta a posição verticalmente ao centro */
+  left: 50%; /* Ajusta a posição horizontalmente ao centro */
+  transform: translate(-50%, -50%); /* Centraliza o texto dentro do círculo */
+  color: #FF0;
+  text-align: center;
+font-family: Poor Story;
+font-size: 35px;
+font-weight: 400;
+line-height: 26px;
+  
+}
+
+
+.contact{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact a{
+  margin-right: 2rem;
+  padding: 2rem;
+  color: #A7A7A7;
+}
+
+.footerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  
+}
+
+.footerNav{
+  border-top: 2px solid #FFF;
+}
+
+.footerNavegation ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.footerNavegation li{
+  padding: 2rem;
+}
+
+
+/*Animações*/
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+}
+
+

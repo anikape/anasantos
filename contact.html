@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <header>
+    <figure>
+
+      <img class="logoHeader" src="./public/images/flash.png" alt="Ícone Menu com um raio">
+    </figure>
+
+    <div class="navegationContainer">
+      <nav class="navegation">
+        <ul>
+          <li><a class="navLink" href="./index.html">Home</a></li>
+          <li><a class="navLink" href="./projects.html">Projects</a></li>
+          <li><a class="navLink" href="./contact.html">Contact</a></li>
+          <li>
+            <a class="navLink" href="#"><i class="fa-brands fa-linkedin"></i>Linkedin
+            </a>
+          </li>
+          <li>
+            <a class="navLink" href="#">
+              <i class="fa-brands fa-github"></i>Github
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+
+    <section class="formContainer">
+
+      <figure class="phone"><img src="./public/images/emoji-headphone.png" alt="" srcset=""></figure>
+
+      <form id="myForm" action="https://formspree.io/f/meqbkddq" method="POST" target="_blank">
+
+        <div class="formContent">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="_replyto">
+        </div>
+
+        <div class="formContent">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+
+
+        <button id="my-form-button" type="submit" class="submit">Enviar</button>
+
+        <p id="my-form-status"></p>
+
+
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="contact">
+      <a href="tel:5581988693599">+55 81 988693599</a>
+      <a href="mailto:ana.br@hotmail.com">ana.br@hotmail.com</a>
+    </section>
+
+    <div id="footerContainer" class="footerNav">
+      <nav class="footerNavegation">
+        <ul>
+          <li><a class="navLink" href="./index.html">Home</a></li>
+          <li><a class="navLink" href="./projects.html">Projects</a></li>
+          <li><a class="navLink" href="./contact.html">Contact</a></li>
+          <li>
+            <a class="navLink" href="https://www.linkedin.com/in/ana-saantos/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin
+            </a>
+          </li>
+          <li>
+            <a class="navLink" href="https://github.com/anikape" target="_blank">
+              <i class="fa-brands fa-github"></i>Github
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
