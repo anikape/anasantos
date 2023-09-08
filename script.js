@@ -1,3 +1,11 @@
+//menu hamburguer
+
+document.querySelector('.menuToggle').addEventListener('click', function () {
+  this.classList.toggle('active');
+});
+
+
+
 //efeito de transição de imagem da main
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -26,6 +26,19 @@ header {
   margin-left: 55px;
 }
 
+.menuToggle {
+  display: none; /* Ocultar o menu hamburguer por padrão */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menuToggle .hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
 .navegationContainer {
   margin-right: 52px;
 }
@@ -34,7 +47,6 @@ header {
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
 }
 
 .navLink {
@@ -83,9 +95,9 @@ header {
 
 .infoImage figure img {
   margin: 12vh auto;
-  /* Centraliza a imagem horizontalmente */
+ 
   display: block;
-  /* Remove qualquer espaço em branco extra abaixo da imagem */
+ 
 }
 
 
@@ -107,7 +119,7 @@ header {
 
 }
 
-#name{
+#name {
   font-size: 40px;
 }
 
@@ -118,10 +130,10 @@ header {
 
 h2 {
   font-size: 43px;
-  text-shadow: 
-  1px 1px 0px rgba(128, 0, 128, 0.5),
-  2px 2px 0px rgba(160, 32, 240, 0.5),
-  3px 3px 0px rgba(218, 112, 214, 0.5);
+  text-shadow:
+    1px 1px 0px rgba(128, 0, 128, 0.5),
+    2px 2px 0px rgba(160, 32, 240, 0.5),
+    3px 3px 0px rgba(218, 112, 214, 0.5);
   font-family: 'Preahvihear', sans-serif;
 }
 
@@ -133,15 +145,17 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:column;
+  flex-direction: column;
 }
 
 .blue {
-  color: #61DAFB; /* Define a cor azul para o texto dentro do elemento com a classe 'blue' */
+  color: #61DAFB;
+  /* Define a cor azul para o texto dentro do elemento com a classe 'blue' */
 }
 
 .highlight {
-  color:#FF0; /* Define a cor amarela para o texto dentro do elemento com a classe 'highlight' */
+  color: #FF0;
+  /* Define a cor amarela para o texto dentro do elemento com a classe 'highlight' */
 }
 
 .menuColors {
@@ -151,11 +165,11 @@ h2 {
   padding-left: 42px;
 }
 
-hr{
-  margin: 3rem  3rem ;
+hr {
+  margin: 3rem 3rem;
 }
 
-.aboutMeContent{
+.aboutMeContent {
   margin-top: 2rem;
 }
 
@@ -168,77 +182,77 @@ hr{
   letter-spacing: 0.9px;
 }
 
-.aboutMeContent p{
+.aboutMeContent p {
   width: 900px;
   color: #FFF;
   font-family: 'Preahvihear', sans-serif;
   font-size: 25px;
   font-weight: 400;
-  line-height: 126.664%; 
+  line-height: 126.664%;
   letter-spacing: 0.5px;
   padding-top: 2rem;
 }
 
-.images{
+.images {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image1{
+.image1 {
   width: 343px;
-height: 212px;
-padding-top: 2em;
+  height: 212px;
+  padding-top: 2em;
 }
 
-.image2{
+.image2 {
   width: 406px;
-height: 296px;
+  height: 296px;
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 1288px;
-height: 1222px;
-border-radius: 97px;
-background: linear-gradient(96deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
-box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
-margin: 8rem auto;
+  height: 1222px;
+  border-radius: 97px;
+  background: linear-gradient(96deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+  margin: 8rem auto;
 }
 
-.colchetes{
+.colchetes {
   color: #FFF;
-  
+
 }
 
-.skills h1{
+.skills h1 {
   color: #FF0;
-font-family: Poppins;
-font-size: 45px;
-font-style: normal;
-font-weight: 600;
-line-height: 32.5px;
-text-align: center;
-/* padding-top:4em; */
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32.5px;
+  text-align: center;
+  /* padding-top:4em; */
 }
 
-.skillsContent{
+.skillsContent {
   display: flex;
   justify-content: center;
-   width: 1105px;
-   margin: 5rem auto;
+  width: 1105px;
+  margin: 5rem auto;
 }
 
-.skillsContent li{
-  color:#9747FF;
+.skillsContent li {
+  color: #9747FF;
   font-family: 'Preahvihear', sans-serif;
   font-size: 23px;
   padding-bottom: 0.5rem;
 }
 
-.skillsContent span{
+.skillsContent span {
   color: #FFFFFF;
   font-family: 'Preahvihear', sans-serif;
   font-size: 23px;
@@ -246,50 +260,217 @@ text-align: center;
 
 .icons {
   display: flex;
-  flex-wrap: wrap; /* Para que os ícones da segunda linha quebrem para a próxima linha quando não houver espaço suficiente */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  flex-wrap: wrap;
+  /* Para que os ícones da segunda linha quebrem para a próxima linha quando não houver espaço suficiente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
   width: 50%;
   margin: 0 auto;
-  text-align: center; /* Centraliza o conteúdo dentro das colunas */
+  text-align: center;
+  /* Centraliza o conteúdo dentro das colunas */
 }
 
 .icons img {
   width: 99px;
   height: 99px;
-  margin: 10px; /* Adicione margem para espaçamento entre os ícones */
+  margin: 10px;
+  /* Adicione margem para espaçamento entre os ícones */
 }
 
-.contact{
+.contact {
   display: flex;
   justify-content: flex-end;
 }
 
-.contact a{
+.contact a {
   margin-right: 2rem;
   padding: 2rem;
   color: #A7A7A7;
 }
 
-.footerContainer{
+.footerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
-  
+
 }
 
-.footerNav{
+.footerNav {
   border-top: 2px solid #FFF;
 }
 
-.footerNavegation ul{
-  display:flex;
+.footerNavegation ul {
+  display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
-.footerNavegation li{
+.footerNavegation li {
   padding: 2rem;
 }
+
+
+/* Estilos para telas menores ou iguais a 400px */
+@media (max-width: 400px) {
+  .menuToggle {
+    display: block; /* Mostrar o menu hamburguer */
+  }
+
+  .navegationContainer {
+    display: none; /* Ocultar o menu de navegação por padrão */
+    position: absolute;
+    top: 80px;
+    left: 0.5rem;
+    right: 0; /* Adicione esta propriedade para alinhar à direita */
+    background-color: rgba(118, 60, 172, 0.09);
+    width: 100%;
+  }
+
+  .navegation ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navLink {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
+  .menuToggle.active + .navegationContainer {
+    display: block;
+  }
+
+  .menuToggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .menuToggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* Estilos para o ícone de hamburguer */
+  .menuToggle .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+  }
+  
+  .menuToggle .hamburger::before,
+  .menuToggle .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menuToggle .hamburger::before {
+    top: -8px;
+  }
+  
+  .menuToggle .hamburger::after {
+    top: 8px;
+  }
+
+  /*main*/
+
+  .infoContainer{
+    flex-direction: column;
+    padding-top: 10rem;
+  }
+
+  .infoImage {
+    width: 466px;
+    height: 431px;
+    border-radius: 431px;
+    margin-left: 0;
+  }
+
+  .infoImage figure img{
+    width: 70%;
+    margin: 2rem auto;
+  }
+
+  .infoText{
+    width: 355px;
+    font-size: 23px;
+  padding-left: 3rem;
+  }
+
+  #name{
+    font-size: 20px;
+  }
+
+  .content p{
+    font-size: 18px;
+  }
+
+  #imagem {
+    width: 54px;
+    height: 54px;
+  
+  }
+
+  .content h2{
+    font-size: 18px;
+  }
+ 
+  .aboutMe {
+    width: 100%; /* Largura total da tela */
+    height: 620px; /* Altura ajustável conforme o conteúdo */
+    padding: 2rem 0; /* Adicione espaço ao redor do conteúdo */
+    background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1);
+
+  }
+
+  .menuColors {
+    width: 100%; /* Largura total da tela */
+    padding: 1rem 0; /* Adicione espaço ao redor do conteúdo */
+  }
+
+  .menuColors img{
+    padding-left: .5em;
+  }
+
+  hr {
+    margin: 1rem 0; /* Adicione espaço ao redor da linha horizontal */
+  }
+
+  .aboutMeContent {
+    margin: 1rem 0; /* Adicione espaço ao redor do conteúdo */
+  }
+
+  .aboutMeContent h1 {
+    font-size: 22px;
+    line-height: 1.3;
+    padding: 0 0 1em 1em; 
+  }
+
+  .aboutMeContent p {
+    font-size: 18px; /* Reduza o tamanho da fonte */
+    line-height: 1.4; /* Aumente o espaçamento entre linhas */
+    width: 100%; /* Largura total da tela */
+    padding: 0 1rem; /* Adicione espaço interno aos parágrafos */
+  }
+ 
+  .images {
+   display: none;
+  }
+
+ 
+
+  
+}
+
+
