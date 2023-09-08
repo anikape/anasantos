@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: #11071F;
+}
+
+header {
+  height: 125px;
+  background: rgba(118, 60, 172, 0.09);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoHeader {
+  width: 47px;
+  height: 47px;
+  margin-left: 55px;
+}
+
+.navegationContainer {
+  margin-right: 52px;
+}
+
+.navegation ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+
+}
+
+.navLink {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 23px;
+}
+
+.linkedin {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navLink:hover {
+  color: #FFFF00BF;
+}
+
+
+.iconHeader:hover svg {
+  fill: #FFFF00BF;
+
+}
+
+/*Main*/
+
+.projectsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+
+.projects{
+  border-radius: 1076px;
+background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0.00) 100%);
+width: 763px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.title{
+  color: #FF0;
+  font-size: 55px;
+  text-align: center;
+}
+
+.colchetes{
+  color: #FFF;
+ 
+}
+
+.projects p{
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 30px;
+  color: #FFF;
+  padding-top: 1em;
+  font-weight: 400;
+  line-height: 126.664%; /* 37.999px */
+  letter-spacing: 0.6px;
+}
+
+#stack{
+  padding-top: 0.5em;
+}
+
+/*Cards dos Projetos*/
+
+.projectContent{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 10px;
+  margin: 5rem;
+    
+}
+
+.cards{
+  background: url("./public/images/bgProjects.png");
+  width: 375px;
+  height: 535px;
+  justify-content: center;
+}
+
+.balls{
+  padding: 2em 1em;
+}
+
+
+.titleProjects{
+  color: #61DAFB;
+font-family: Poppins;
+font-size: 28px;
+font-weight: 500;
+line-height: 26px;
+text-align: center;
+padding-top: 0.5em;
+}
+
+.blue {
+  color: #61DAFB; /* Define a cor azul para o texto dentro do elemento com a classe 'blue' */
+}
+
+.highlight {
+  color:#FF0; /* Define a cor amarela para o texto dentro do elemento com a classe 'highlight' */
+}
+
+.paragraph{
+  color: #ccc;
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 300;
+line-height: 23.5px;
+width: 314px;
+justify-content: center;
+margin: 0 auto;
+padding-top: 1em;
+}
+
+.linksProjects{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1em;
+}
+
+.linksProjects a{
+  color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+text-decoration-line: underline;
+}

@@ -106,6 +106,10 @@ header {
 
 }
 
+#name{
+  font-size: 40px;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -206,7 +210,6 @@ margin: 8rem auto;
 .colchetes{
   color: #FFF;
   
-
 }
 
 .skills h1{
