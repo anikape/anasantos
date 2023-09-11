@@ -315,7 +315,7 @@ hr {
 
 
 /* Estilos para telas menores ou iguais a 400px */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .menuToggle {
     display: block; /* Mostrar o menu hamburguer */
   }
