@@ -113,13 +113,7 @@ align-items: center;
     
 }
 
-/* .cards{
-  background: url("./public/images/bgProjects.png");
-  width: 375px;
-  height: 535px;
-  justify-content: center;
-  position: relative; 
-} */
+
 
 .cards {
   width: 375px;
@@ -220,11 +214,11 @@ padding-top: 0.5em;
 }
 
 .blue {
-  color: #61DAFB; /* Define a cor azul para o texto dentro do elemento com a classe 'blue' */
+  color: #61DAFB;
 }
 
 .highlight {
-  color:#FF0; /* Define a cor amarela para o texto dentro do elemento com a classe 'highlight' */
+  color:#FF0;
 }
 
 .paragraph{
@@ -239,11 +233,6 @@ margin: 0 auto;
 padding-top: 1em;
 }
 
-/* .linksProjects{
-  display: flex;
-  justify-content: space-around;
-  padding-top: 1em;
-} */
 
 .linksProjects {
   position: absolute; /* Adicione esta linha */
@@ -346,4 +335,161 @@ line-height: 26px;
 
 }
 
+@media (max-width: 400px) {
+  
+  .logoName{
+    display: block;
+    padding: 1em;
+    color: #ccc;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
 
+  .logoName:hover{
+    color: #FFFF00BF;
+  }
+
+  .logoHeader{
+    display: none;
+  }
+
+  .menuToggle {
+    display: block; /* Mostrar o menu hamburguer */
+  }
+
+  .navegationContainer {
+    display: none; /* Ocultar o menu de navegação por padrão */
+    position: absolute;
+    top: 80px;
+    left: 0.5rem;
+    right: 0; /* Adicione esta propriedade para alinhar à direita */
+    background-color: rgba(118, 60, 172, 0.09);
+    width: 100%;
+  }
+
+  .navegation ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navegation ul li{
+    padding: 0.03em;
+  }
+
+  .navLink {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
+  .menuToggle.active + .navegationContainer {
+    display: block;
+  }
+
+  .menuToggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .menuToggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* Estilos para o ícone de hamburguer */
+  .menuToggle .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+  }
+  
+  .menuToggle .hamburger::before,
+  .menuToggle .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menuToggle .hamburger::before {
+    top: -8px;
+  }
+  
+  .menuToggle .hamburger::after {
+    top: 8px;
+  }
+
+  .projectsContainer{
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+  .projects{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 35px;
+  }
+
+  .projects p{
+    font-size: 18px;
+    padding: 1em;
+  }
+
+  .image img{
+    width: 90%;
+  
+  }
+
+  .projectContent{
+    grid-template-columns: 1fr;
+   justify-content: center;
+    align-items: center;
+  }
+
+  .cards{
+    width: 275px;
+    height: 600px;
+  }
+
+  .paragraph{
+    font-size: 14px;
+    width: 260px;
+    justify-content: flex-start;
+    padding: 0.5em;
+  }
+
+
+
+
+
+
+  .contact{
+    justify-content: center;
+    width:100%;
+  }
+  .contact a {
+   
+    margin-right: 0;
+    font-size: 1em;
+  }
+
+  .footerNavegation ul{
+    flex-wrap: wrap;
+  }
+
+
+  .copyrigth h3{
+    font-size: 1em;
+  }
+
+
+}

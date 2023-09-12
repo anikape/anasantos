@@ -329,6 +329,11 @@ hr {
     color: #ccc;
     font-family: 'Preahvihear', sans-serif;
     font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .logoName:hover{
+    color: #FFFF00BF;
   }
 
   .logoHeader{
@@ -547,9 +552,12 @@ hr {
     }
   .contact{
     justify-content: center;
+    width:100%;
   }
   .contact a {
+   
     margin-right: 0;
+    font-size: 1em;
   }
 
   .footerNavegation ul{
