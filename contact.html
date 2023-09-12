@@ -10,10 +10,17 @@
 
 <body>
   <header>
-    <figure>
+    <div class="logoHeader">
+      <figure>
+        <img class="logoHeader" src="./public/images/flash.png" alt="Ícone Menu com um raio">
+      </figure>
+    </div>
 
-      <img class="logoHeader" src="./public/images/flash.png" alt="Ícone Menu com um raio">
-    </figure>
+    <h1 class="logoName">Ana Santos</h1>
+
+    <div class="menuToggle">
+      <div class="hamburger"></div>
+    </div>
 
     <div class="navegationContainer">
       <nav class="navegation">
@@ -22,11 +29,11 @@
           <li><a class="navLink" href="./projects.html">Projects</a></li>
           <li><a class="navLink" href="./contact.html">Contact</a></li>
           <li>
-            <a class="navLink" href="#"><i class="fa-brands fa-linkedin"></i>Linkedin
+            <a class="navLink" href="https://www.linkedin.com/in/ana-saantos/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin
             </a>
           </li>
           <li>
-            <a class="navLink" href="#">
+            <a class="navLink" href="https://github.com/anikape" target="_blank">
               <i class="fa-brands fa-github"></i>Github
             </a>
           </li>
@@ -46,7 +53,7 @@
 
         <div class="formContent">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="_replyto">
+          <input type="email" id="email" name="_replyto" placeholder="Informe seu e-mail">
         </div>
 
         <div class="formContent">
@@ -87,11 +94,17 @@
           </li>
         </ul>
       </nav>
+      
+    </div>
+
+    <div class="copyrigth">
+      <h3>Ana Santos &copy;2023 - All rights reserved. </h3>
     </div>
 
   </footer>
   <script src="https://kit.fontawesome.com/7a6edab03c.js" crossorigin="anonymous"></script>
   <script src="contact.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Alata&family=Archivo+Black&family=Chelsea+Market&family=Lalezar&family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   margin: 0;
@@ -74,8 +74,8 @@ box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
 
 main {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  justify-content: center;
+  align-items: center;
   padding-top: 5rem;
 }
 
@@ -86,10 +86,8 @@ main {
 form{
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza horizontalmente no eixo X */
-  text-align: center; /* Alinha o conteúdo do formulário no centro */
-
- 
+  align-items: center;
+  text-align: center; 
 }
 
 .formContent{
@@ -100,13 +98,13 @@ form{
 
 form label{
   color: #FFF;
-font-family: Chelsea Market;
+font-family: 'Chelsea Market', cursive;
 font-size: 28px;
 font-weight: 400;
-line-height: 138.164%; /* 38.686px */
+line-height: 138.164%;
 letter-spacing: 0.56px;
-text-align: left; /* Alinhe o texto da label à esquerda */
-  width: 100%; /* Largura total para a label */
+text-align: left; 
+  width: 100%;
 }
 
 form input{
@@ -128,9 +126,9 @@ outline: none;
 }
 
 .submit{
-  margin-top: 20px; /* Adicione margem acima do botão para espaçamento */
+  margin-top: 20px;
   color: #FFF;
-  font-family: Chelsea Market;
+  font-family: 'Chelsea Market', cursive;
   font-size: 30px;
   font-weight: 400;
   line-height: 138.164%;
@@ -138,16 +136,21 @@ outline: none;
   width: 276px;
   height: 55px;
   border-radius: 14px;
-background: #F774FB;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #F774FB;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+}
+
+.submit:hover{
+  background: rgba(247, 116, 251, 0.32);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 
 #my-form-status{
   padding-top: 2rem;
   color: #FFF;
-font-family: Chelsea Market;
+font-family: 'Chelsea Market', cursive;
 font-size: 30px;
 }
 
@@ -184,4 +187,154 @@ font-size: 30px;
 
 .footerNavegation li{
   padding: 2rem;
+}
+
+
+@media (max-width: 400px) {
+  
+  .logoName{
+    display: block;
+    padding: 1em;
+    color: #ccc;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .logoName:hover{
+    color: #FFFF00BF;
+  }
+
+  .logoHeader{
+    display: none;
+  }
+
+  .menuToggle {
+    display: block; /* Mostrar o menu hamburguer */
+  }
+
+  .navegationContainer {
+    display: none; /* Ocultar o menu de navegação por padrão */
+    position: absolute;
+    top: 80px;
+    left: 0.5rem;
+    right: 0; /* Adicione esta propriedade para alinhar à direita */
+    background-color: rgba(118, 60, 172, 0.09);
+    width: 100%;
+  }
+
+  .navegation ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navegation ul li{
+    padding: 0.03em;
+  }
+
+  .navLink {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
+  .menuToggle.active + .navegationContainer {
+    display: block;
+  }
+
+  .menuToggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .menuToggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* Estilos para o ícone de hamburguer */
+  .menuToggle .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+  }
+  
+  .menuToggle .hamburger::before,
+  .menuToggle .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menuToggle .hamburger::before {
+    top: -8px;
+  }
+  
+  .menuToggle .hamburger::after {
+    top: 8px;
+  }
+
+ .formContainer{
+  width: 100%;
+  height: 573px;
+ } 
+
+ .phone{
+  margin-left: 5rem;
+  margin-top: -5rem;
+ }
+
+ .phone img{
+  width: 75%;
+  
+  
+  }
+
+.formContent{
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+}
+
+form input{
+  width: 120%;
+}
+
+form input::placeholder{
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#message{
+  width: 120%;
+}
+
+
+
+  .contact{
+    justify-content: center;
+    width:100%;
+  }
+  .contact a {
+   
+    margin-right: 0;
+    font-size: 1em;
+  }
+
+  .footerNavegation ul{
+    flex-wrap: wrap;
+  }
+
+
+  .copyrigth h3{
+    font-size: 1em;
+  }
+
+
 }
