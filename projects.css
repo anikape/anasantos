@@ -26,6 +26,10 @@ header {
   margin-left: 55px;
 }
 
+.logoName{
+  display: none;
+}
+
 .navegationContainer {
   margin-right: 52px;
 }
@@ -94,7 +98,7 @@ align-items: center;
   color: #FFF;
   padding-top: 1em;
   font-weight: 400;
-  line-height: 126.664%; /* 37.999px */
+  line-height: 126.664%;
   letter-spacing: 0.6px;
 }
 
@@ -112,8 +116,6 @@ align-items: center;
   position: relative; 
     
 }
-
-
 
 .cards {
   width: 375px;
@@ -195,9 +197,6 @@ align-items: center;
   transform: translateX(100%);
   }
 
-
-
-
 .balls{
   padding: 2em 1em;
 }
@@ -235,14 +234,13 @@ padding-top: 1em;
 
 
 .linksProjects {
-  position: absolute; /* Adicione esta linha */
-  bottom: 10px; /* Ajuste a distância do fundo conforme necessário */
-  left: 50%; /* Centralize horizontalmente */
-  transform: translateX(-50%); /* Centralize horizontalmente */
+  position: absolute; 
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
   display: flex;
   justify-content: space-around;
-  width: 100%; /* Certifique-se de que ocupe toda a largura dos cards */
-  padding-top: 1em;
+  width: 100%;   padding-top: 1em;
  
 }
 
@@ -251,7 +249,7 @@ padding-top: 1em;
 font-family: Poppins;
 font-size: 16px;
 font-weight: 400;
-line-height: 26px; /* 162.5% */
+line-height: 26px;
 text-decoration-line: underline;
 
 }
@@ -259,7 +257,7 @@ text-decoration-line: underline;
 /*Loading animation*/
 
 .loading-container {
-  position: relative; /* Adicionado para posicionamento relativo */
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,20 +273,20 @@ text-decoration-line: underline;
 }
 
 .loading-text {
- 
-  position: absolute; /* Adicionado para posicionamento absoluto */
-  top: 50%; /* Ajusta a posição verticalmente ao centro */
-  left: 50%; /* Ajusta a posição horizontalmente ao centro */
-  transform: translate(-50%, -50%); /* Centraliza o texto dentro do círculo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #FF0;
   text-align: center;
-font-family: Poor Story;
-font-size: 35px;
-font-weight: 400;
-line-height: 26px;
+  font-family: Poor Story;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 26px;
   
 }
 
+/*Footer*/
 
 .contact{
   display: flex;
@@ -324,9 +322,19 @@ line-height: 26px;
   padding: 2rem;
 }
 
+.copyrigth{
+  color: #CCC;
+  text-align: center;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 0.5px solid #ccc;
+}
+
+.copyrigth h3{
+  padding-top: 2em;
+}
 
 /*Animações*/
-
 
 
 @keyframes spin {
@@ -355,15 +363,15 @@ line-height: 26px;
   }
 
   .menuToggle {
-    display: block; /* Mostrar o menu hamburguer */
+    display: block; 
   }
 
   .navegationContainer {
-    display: none; /* Ocultar o menu de navegação por padrão */
+    display: none;
     position: absolute;
     top: 80px;
     left: 0.5rem;
-    right: 0; /* Adicione esta propriedade para alinhar à direita */
+    right: 0;
     background-color: rgba(118, 60, 172, 0.09);
     width: 100%;
   }

@@ -26,6 +26,10 @@ header {
   margin-left: 55px;
 }
 
+.logoName{
+  display: none;
+}
+
 .navegationContainer {
   margin-right: 52px;
 }
@@ -64,10 +68,10 @@ header {
   justify-content: center;
   margin: 5rem auto;
   width: 856px;
-height: 873px;
-border-radius: 97px;
-background: linear-gradient(96deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
-box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
+  height: 873px;
+  border-radius: 97px;
+  background: linear-gradient(96deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+  box-shadow: 4px 7px 26px 0px rgba(0, 0, 0, 0.12);
 }
 
 /*main*/
@@ -109,20 +113,27 @@ text-align: left;
 
 form input{
   width: 705px;
-height: 55px;
-border-radius: 14px;
-background: #FFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-outline: none;
+  height: 55px;
+  border-radius: 14px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  outline: none;
+  border: none;
+}
+
+form input::placeholder{
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #message{
   width: 705px;
-height: 151px;
-border-radius: 17px;
-background: #FFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
-outline: none;
+  height: 151px;
+  border-radius: 17px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  outline: none;
+  border: none;
 }
 
 .submit{
@@ -135,6 +146,7 @@ outline: none;
   letter-spacing: 0.6px;
   width: 276px;
   height: 55px;
+  border: none;
   border-radius: 14px;
   background: #F774FB;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -150,10 +162,11 @@ outline: none;
 #my-form-status{
   padding-top: 2rem;
   color: #FFF;
-font-family: 'Chelsea Market', cursive;
-font-size: 30px;
+  font-family: 'Chelsea Market', cursive;
+  font-size: 30px;
 }
 
+/*Footer*/
 
 .contact{
   display: flex;
@@ -189,6 +202,18 @@ font-size: 30px;
   padding: 2rem;
 }
 
+.copyrigth{
+  color: #CCC;
+  text-align: center;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 0.5px solid #ccc;
+}
+
+.copyrigth h3{
+  padding-top: 2em;
+}
+
 
 @media (max-width: 400px) {
   
@@ -210,15 +235,15 @@ font-size: 30px;
   }
 
   .menuToggle {
-    display: block; /* Mostrar o menu hamburguer */
+    display: block;
   }
 
   .navegationContainer {
-    display: none; /* Ocultar o menu de navegação por padrão */
+    display: none;
     position: absolute;
     top: 80px;
     left: 0.5rem;
-    right: 0; /* Adicione esta propriedade para alinhar à direita */
+    right: 0; 
     background-color: rgba(118, 60, 172, 0.09);
     width: 100%;
   }
@@ -315,24 +340,22 @@ form input::placeholder{
   width: 120%;
 }
 
-
-
-  .contact{
+.contact{
     justify-content: center;
     width:100%;
   }
-  .contact a {
+.contact a {
    
     margin-right: 0;
     font-size: 1em;
   }
 
-  .footerNavegation ul{
+.footerNavegation ul{
     flex-wrap: wrap;
   }
 
 
-  .copyrigth h3{
+ .copyrigth h3{
     font-size: 1em;
   }
 
