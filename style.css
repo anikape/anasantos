@@ -457,7 +457,7 @@ hr {
     padding: 2rem 0;
     background-image: url("./public/images/bgMobile.png");
     background-repeat: no-repeat;
-        /* background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1); */
+    background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1);
 
   }
 
