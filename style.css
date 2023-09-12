@@ -26,6 +26,10 @@ header {
   margin-left: 55px;
 }
 
+.logoName{
+  display: none;
+}
+
 .menuToggle {
   display: none; /* Ocultar o menu hamburguer por padrão */
   cursor: pointer;
@@ -241,8 +245,8 @@ hr {
 .skillsContent {
   display: flex;
   justify-content: center;
-  width: 1105px;
-  margin: 5rem auto;
+   margin: 5rem auto;
+   width: 1105px;
 }
 
 .skillsContent li {
@@ -261,22 +265,17 @@ hr {
 .icons {
   display: flex;
   flex-wrap: wrap;
-  /* Para que os ícones da segunda linha quebrem para a próxima linha quando não houver espaço suficiente */
   justify-content: center;
-  /* Centraliza horizontalmente */
   align-items: center;
-  /* Centraliza verticalmente */
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  /* Centraliza o conteúdo dentro das colunas */
-}
+  }
 
 .icons img {
   width: 99px;
   height: 99px;
   margin: 10px;
-  /* Adicione margem para espaçamento entre os ícones */
 }
 
 .contact {
@@ -290,13 +289,7 @@ hr {
   color: #A7A7A7;
 }
 
-.footerContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
 
-}
 
 .footerNav {
   border-top: 2px solid #FFF;
@@ -313,9 +306,35 @@ hr {
   padding: 2rem;
 }
 
+.copyrigth{
+  color: #CCC;
+  text-align: center;
+  padding-bottom: 1em;
+  width: 100%;
+  border-top: 0.5px solid #ccc;
+}
+
+.copyrigth h3{
+  padding-top: 2em;
+}
+
+
 
 /* Estilos para telas menores ou iguais a 400px */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
+  
+  .logoName{
+    display: block;
+    padding: 1em;
+    color: #ccc;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .logoHeader{
+    display: none;
+  }
+
   .menuToggle {
     display: block; /* Mostrar o menu hamburguer */
   }
@@ -337,7 +356,7 @@ hr {
   }
 
   .navegation ul li{
-    padding: 0.01em;
+    padding: 0.03em;
   }
 
   .navLink {
@@ -392,6 +411,7 @@ hr {
   .infoContainer{
     flex-direction: column;
     padding-top: 10rem;
+    
   }
 
   .infoImage {
@@ -431,28 +451,30 @@ hr {
   }
  
   .aboutMe {
-    width: 100%; /* Largura total da tela */
-    height: 620px; /* Altura ajustável conforme o conteúdo */
-    padding: 2rem 0; /* Adicione espaço ao redor do conteúdo */
-    background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1);
+    width: 100%;
+    height: 670px;
+    padding: 2rem 0;
+    background-image: url("./public/images/bgMobile.png");
+    /* background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1); */
 
   }
 
   .menuColors {
-    width: 100%; /* Largura total da tela */
-    padding: 1rem 0; /* Adicione espaço ao redor do conteúdo */
+    width: 100%;
+    padding: 1.5rem 0.5rem;
   }
 
   .menuColors img{
     padding-left: .5em;
+    padding-top: 1em;
   }
 
   hr {
-    margin: 1rem 0; /* Adicione espaço ao redor da linha horizontal */
+    margin: 1rem 0;
   }
 
   .aboutMeContent {
-    margin: 1rem 0; /* Adicione espaço ao redor do conteúdo */
+    margin: 1rem 0; 
   }
 
   .aboutMeContent h1 {
@@ -462,19 +484,80 @@ hr {
   }
 
   .aboutMeContent p {
-    font-size: 18px; /* Reduza o tamanho da fonte */
-    line-height: 1.4; /* Aumente o espaçamento entre linhas */
-    width: 100%; /* Largura total da tela */
-    padding: 0 1rem; /* Adicione espaço interno aos parágrafos */
+    font-size: 18px;
+    line-height: 1.4;
+    width: 100%;
+    padding: 0 1rem;
   }
  
-  .images {
-   display: none;
-  }
-
- 
-
   
+
+  .image1, .image2{
+    width: 153px;
+    height: 120px;
+    padding-bottom: 1rem;
+  }
+
+
+  .skills{
+    width: 390px;
+    margin: 1rem auto;
+    }
+
+  .skills h1 {
+    font-size: 25px;
+    line-height: 22.5px;
+    text-align: center;
+    padding-bottom: 2em;
+         
+    }
+    
+    .skillsContent {
+      justify-content: flex-start;
+      margin: 0 1em;
+      width: 380px;
+    
+      
+    }
+    
+    .skillsContent li {
+        font-size: 11px;
+        padding-bottom: 0;
+    }
+    
+    .skillsContent span {
+      
+      font-size: 1em;
+      text-align: right;
+      
+    }
+
+    .icons {
+      justify-content: flex-start;
+      width: 100%;
+      padding: 1em;
+    }
+
+   .icons img {
+      width: 50px;
+      height: 50px;
+    }
+  .contact{
+    justify-content: center;
+  }
+  .contact a {
+    margin-right: 0;
+  }
+
+  .footerNavegation ul{
+    flex-wrap: wrap;
+  }
+
+
+  .copyrigth h3{
+    font-size: 1em;
+  }
+
 }
 
 
