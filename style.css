@@ -411,6 +411,7 @@ hr {
   .infoContainer{
     flex-direction: column;
     padding-top: 10rem;
+    width: 350px;
     
   }
 
@@ -455,7 +456,8 @@ hr {
     height: 670px;
     padding: 2rem 0;
     background-image: url("./public/images/bgMobile.png");
-    /* background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1); */
+    background-repeat: no-repeat;
+        /* background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1); */
 
   }
 
@@ -502,6 +504,7 @@ hr {
   .skills{
     width: 390px;
     margin: 1rem auto;
+    height: 700px;
     }
 
   .skills h1 {
