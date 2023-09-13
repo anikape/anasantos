@@ -468,12 +468,12 @@ text-decoration-line: underline;
   }
 
   .cards{
-    width: 275px;
+    width: 295px;
     height: 600px;
   }
 
   .paragraph{
-    font-size: 14px;
+    font-size: 17px;
     width: 260px;
     justify-content: flex-start;
     padding: 0.5em;
