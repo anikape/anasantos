@@ -341,15 +341,15 @@ hr {
   }
 
   .menuToggle {
-    display: block; /* Mostrar o menu hamburguer */
+    display: block; 
   }
 
   .navegationContainer {
-    display: none; /* Ocultar o menu de navegação por padrão */
+    display: none; 
     position: absolute;
     top: 80px;
     left: 0.5rem;
-    right: 0; /* Adicione esta propriedade para alinhar à direita */
+    right: 0; 
     background-color: rgba(118, 60, 172, 0.09);
     width: 100%;
   }
@@ -362,7 +362,7 @@ hr {
 
   .navegation ul li{
     padding: 1em;
-    z-index: 10;
+    z-index: 100;
   }
 
   .navLink {
