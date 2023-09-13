@@ -362,7 +362,7 @@ hr {
 
   .navegation ul li{
     padding: 1em;
-    z-index: 100;
+   
   }
 
   .navLink {
@@ -373,6 +373,7 @@ hr {
   /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
   .menuToggle.active + .navegationContainer {
     display: block;
+    z-index: 10;
   }
 
   .menuToggle.active .hamburger::before {
