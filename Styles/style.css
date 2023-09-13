@@ -26,12 +26,13 @@ header {
   margin-left: 55px;
 }
 
-.logoName{
+.logoName {
   display: none;
 }
 
 .menuToggle {
-  display: none; /* Ocultar o menu hamburguer por padrão */
+  display: none;
+  /* Ocultar o menu hamburguer por padrão */
   cursor: pointer;
   padding: 10px;
 }
@@ -99,9 +100,9 @@ header {
 
 .infoImage figure img {
   margin: 12vh auto;
- 
+
   display: block;
- 
+
 }
 
 
@@ -245,8 +246,8 @@ hr {
 .skillsContent {
   display: flex;
   justify-content: center;
-   margin: 5rem auto;
-   width: 1105px;
+  margin: 5rem auto;
+  width: 1105px;
 }
 
 .skillsContent li {
@@ -270,7 +271,7 @@ hr {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  }
+}
 
 .icons img {
   width: 99px;
@@ -306,7 +307,7 @@ hr {
   padding: 2rem;
 }
 
-.copyrigth{
+.copyrigth {
   color: #CCC;
   text-align: center;
   padding-bottom: 1em;
@@ -314,7 +315,7 @@ hr {
   border-top: 0.5px solid #ccc;
 }
 
-.copyrigth h3{
+.copyrigth h3 {
   padding-top: 2em;
 }
 
@@ -322,8 +323,12 @@ hr {
 
 /* Estilos para telas menores ou iguais a 400px */
 @media (max-width: 400px) {
-  
-  .logoName{
+
+  body {
+    width: 100%;
+  }
+
+  .logoName {
     display: block;
     padding: 1em;
     color: #ccc;
@@ -332,24 +337,24 @@ hr {
     transition: color 0.3s ease;
   }
 
-  .logoName:hover{
+  .logoName:hover {
     color: #FFFF00BF;
   }
 
-  .logoHeader{
+  .logoHeader {
     display: none;
   }
 
   .menuToggle {
-    display: block; 
+    display: block;
   }
 
   .navegationContainer {
-    display: none; 
+    display: none;
     position: absolute;
     top: 80px;
     left: 0.5rem;
-    right: 0; 
+    right: 0;
     background-color: rgba(118, 60, 172, 0.09);
     width: 100%;
   }
@@ -361,9 +366,9 @@ hr {
     padding: 10px;
   }
 
-  .navegation ul li{
+  .navegation ul li {
     padding: 1em;
-   
+
   }
 
   .navLink {
@@ -372,7 +377,7 @@ hr {
   }
 
   /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
-  .menuToggle.active + .navegationContainer {
+  .menuToggle.active+.navegationContainer {
     display: block;
     z-index: 10;
   }
@@ -381,7 +386,7 @@ hr {
     transform: rotate(45deg);
     top: 0;
   }
-  
+
   .menuToggle.active .hamburger::after {
     transform: rotate(-45deg);
     top: 0;
@@ -395,7 +400,7 @@ hr {
     margin: 6px 0;
     position: relative;
   }
-  
+
   .menuToggle .hamburger::before,
   .menuToggle .hamburger::after {
     content: "";
@@ -405,22 +410,22 @@ hr {
     position: absolute;
     transition: transform 0.2s ease-in-out;
   }
-  
+
   .menuToggle .hamburger::before {
-    top: -8px;
+    top: -5px;
   }
-  
+
   .menuToggle .hamburger::after {
-    top: 8px;
+    top: 5px;
   }
 
   /*main*/
 
-  .infoContainer{
+  .infoContainer {
     flex-direction: column;
-    padding-top: 10rem;
-    width: 350px;
-    
+    padding-top: 3rem;
+    max-width: 390px;
+    overflow-x: hidden;
   }
 
   .infoImage {
@@ -430,42 +435,43 @@ hr {
     margin-left: 0;
   }
 
-  .infoImage figure img{
+  .infoImage figure img {
     width: 70%;
     margin: 2rem auto;
   }
 
-  .infoText{
+  .infoText {
     width: 355px;
-    font-size: 23px;
-  padding-left: 3rem;
+    font-size: 25px;
+    padding-left: 3rem;
   }
 
-  #name{
-    font-size: 20px;
+  #name {
+    font-size: 26px;
   }
 
-  .content p{
-    font-size: 18px;
+  .content p {
+    font-size: 24px;
   }
 
   #imagem {
     width: 54px;
     height: 54px;
-  
+
   }
 
-  .content h2{
+  .content h2 {
     font-size: 18px;
   }
- 
+
   .aboutMe {
-    width: 100%;
-    height: 670px;
-    padding: 2rem 0;
-    background-image: url("./public/images/bgMobile.png");
+    max-width: 390px;
+    height: 700px;
+    padding: 1rem 0;
+    background-image: url("../public/images/bgMobile.png");
     background-repeat: no-repeat;
     background: rgba(0, 209, 255, 1), rgba(255, 0, 229, 1);
+
 
   }
 
@@ -474,7 +480,7 @@ hr {
     padding: 1.5rem 0.5rem;
   }
 
-  .menuColors img{
+  .menuColors img {
     padding-left: .5em;
     padding-top: 1em;
   }
@@ -484,94 +490,102 @@ hr {
   }
 
   .aboutMeContent {
-    margin: 1rem 0; 
+    margin: 1rem 0;
   }
 
   .aboutMeContent h1 {
     font-size: 22px;
     line-height: 1.3;
-    padding: 0 0 1em 1em; 
+    padding: 0 0 1em 1em;
   }
 
   .aboutMeContent p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.4;
     width: 100%;
     padding: 0 1rem;
   }
- 
-  
 
-  .image1, .image2{
+
+
+  .image1,
+  .image2 {
     width: 153px;
     height: 120px;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
   }
 
 
-  .skills{
-    width: 390px;
+  .skills {
+    max-width: 390px;
     margin: 1rem auto;
-    height: 700px;
-    }
+    
+  }
 
   .skills h1 {
-    font-size: 25px;
-    line-height: 22.5px;
-    text-align: center;
+    font-size: 28px;
+    line-height: 12.5px;
+    
     padding-bottom: 2em;
-         
-    }
-    
-    .skillsContent {
-      justify-content: flex-start;
-      margin: 0 1em;
-      width: 380px;
-    
-      
-    }
-    
-    .skillsContent li {
-        font-size: 11px;
-        padding-bottom: 0;
-    }
-    
-    .skillsContent span {
-      
-      font-size: 1em;
-      text-align: right;
-      
-    }
 
-    .icons {
-      justify-content: flex-start;
-      width: 100%;
-      padding: 1em;
-    }
-
-   .icons img {
-      width: 50px;
-      height: 50px;
-    }
-  .contact{
-    justify-content: center;
-    width:100%;
   }
+
+  .skillsContent {
+    justify-content: flex-start;
+    margin: 0 1em;
+    width: 380px;
+    height: 900px;
+
+
+  }
+
+  .skillsContent ul{
+    padding: 1em;
+  }
+
+  .skillsContent li {
+    font-size: 15px;
+    padding-bottom: 1em;
+  }
+
+  .skillsContent span {
+
+    font-size: 1em;
+    text-align: right;
+
+  }
+
+  .icons {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+
+  .contact {
+    justify-content: center;
+    width: 100%;
+  }
+
   .contact a {
-   
+
     margin-right: 0;
     font-size: 1em;
   }
 
-  .footerNavegation ul{
+  .footerNavegation ul {
     flex-wrap: wrap;
   }
 
 
-  .copyrigth h3{
+  .copyrigth h3 {
     font-size: 1em;
   }
 
 }
-
-
