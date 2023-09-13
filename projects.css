@@ -377,23 +377,27 @@ text-decoration-line: underline;
   }
 
   .navegation ul {
-    flex-direction: column;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+      
   }
 
   .navegation ul li{
-    padding: 0.03em;
+    padding: 1em;
   }
 
   .navLink {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 
   /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
   .menuToggle.active + .navegationContainer {
     display: block;
+    z-index: 10;
   }
 
   .menuToggle.active .hamburger::before {
@@ -436,7 +440,7 @@ text-decoration-line: underline;
   .projectsContainer{
     flex-direction: column;
     width: 100%;
-    
+    padding-top: 10rem;
   }
 
   .projects{

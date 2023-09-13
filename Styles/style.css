@@ -355,9 +355,10 @@ hr {
   }
 
   .navegation ul {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
   }
 
   .navegation ul li{
@@ -366,7 +367,7 @@ hr {
   }
 
   .navLink {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 

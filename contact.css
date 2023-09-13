@@ -249,23 +249,25 @@ form input::placeholder{
   }
 
   .navegation ul {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
   }
 
   .navegation ul li{
-    padding: 0.03em;
+    padding: 1em;
   }
 
   .navLink {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
 
   /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
   .menuToggle.active + .navegationContainer {
     display: block;
+    z-index: 10;
   }
 
   .menuToggle.active .hamburger::before {
@@ -308,11 +310,12 @@ form input::placeholder{
  .formContainer{
   width: 100%;
   height: 573px;
+  padding-top: 12rem;
  } 
 
  .phone{
   margin-left: 5rem;
-  margin-top: -5rem;
+  margin-top: -10rem;
  }
 
  .phone img{
