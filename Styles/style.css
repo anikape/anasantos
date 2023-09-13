@@ -362,6 +362,7 @@ hr {
 
   .navegation ul li{
     padding: 1em;
+    z-index: 10;
   }
 
   .navLink {
