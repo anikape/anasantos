@@ -236,7 +236,7 @@ form input::placeholder{
   }
 
   .menuToggle {
-    display: block;
+    display: block; 
   }
 
   .navegationContainer {
@@ -244,16 +244,18 @@ form input::placeholder{
     position: absolute;
     top: 80px;
     left: 0.5rem;
-    right: 0; 
+    right: 0;
     background-color: rgba(118, 60, 172, 0.09);
     width: 100%;
   }
 
   .navegation ul {
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 10px;
+      
   }
 
   .navegation ul li{
@@ -307,6 +309,7 @@ form input::placeholder{
   .menuToggle .hamburger::after {
     top: 8px;
   }
+
 
  .formContainer{
    
