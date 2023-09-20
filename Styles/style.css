@@ -698,6 +698,11 @@ hr {
     max-width: 100%;
   }
 
+  .infoContainer .content{
+    justify-content:center;
+    align-items: center;
+  }
+
   /* Ajusta o alinhamento do texto nos elementos de conteúdo */
   .infoText,
   .aboutMeContent,
