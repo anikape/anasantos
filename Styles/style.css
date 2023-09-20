@@ -751,6 +751,10 @@ hr {
     padding: 0;
   }
 
+  .images{
+    flex-direction: column;
+  }
+
   .image1,
   .image2 {
     width: 100%;
