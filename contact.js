@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
           if (data && data.errors) {
             status.innerHTML = data.errors.map(error => error.message).join(", ");
           } else {
-            status.innerHTML = "Oops! There was a problem submitting your form.";
+            status.innerHTML = "Não foi possível enviar a sua solicitação.";
           }
         });
       }
     }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form.";
+      status.innerHTML = "Não foi possível enviar a sua solicitação.";
     });
   }
 

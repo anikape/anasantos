@@ -343,7 +343,7 @@ text-decoration-line: underline;
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 715px) {
   
   .logoName{
     display: block;
@@ -454,6 +454,7 @@ text-decoration-line: underline;
   .projects p{
     font-size: 18px;
     padding: 1em;
+    text-align: center;
   }
 
   .image img{
@@ -498,5 +499,120 @@ text-decoration-line: underline;
     font-size: 1em;
   }
 
+
+}
+
+@media (min-width: 716px) and (max-width: 1041px ){
+
+  header{
+    width: 100%;
+  }
+
+  .logoName{
+    display: block;
+    padding: 1em;
+    color: #ccc;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .logoName:hover{
+    color: #FFFF00BF;
+  }
+
+  .logoHeader{
+    display: none;
+  }
+
+  .menuToggle {
+    display: block; 
+  }
+
+  .navegationContainer {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0.5rem;
+    right: 0;
+    background-color: rgba(118, 60, 172, 0.09);
+    width: 100%;
+  }
+
+  .navegation ul {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+      
+  }
+
+  .navegation ul li{
+    padding: 1em;
+  }
+
+  .navLink {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
+  .menuToggle.active + .navegationContainer {
+    display: block;
+    z-index: 10;
+  }
+
+  .menuToggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  
+  .menuToggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* Estilos para o ícone de hamburguer */
+  .menuToggle .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+  }
+  
+  .menuToggle .hamburger::before,
+  .menuToggle .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menuToggle .hamburger::before {
+    top: -8px;
+  }
+  
+  .menuToggle .hamburger::after {
+    top: 8px;
+  }
+
+  .projectsContainer{
+    margin-top: 6em;
+    flex-direction: column;
+  }
+
+  .projects p{
+    margin-left: 1em;
+  }
+
+  .projectContent{
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+     align-items: center;
+  }
 
 }

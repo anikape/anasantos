@@ -6,10 +6,12 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  
 }
 
 body {
   background: #11071F;
+  overflow-x: hidden;
 }
 
 header {
@@ -143,7 +145,7 @@ h2 {
 }
 
 .aboutMe {
-  background-image: url("./public/images/bgAuboutMe.png");
+  background-image: url("../public/images/bgAuboutMe.png");
   width: 965px;
   height: 841px;
   margin: 0 auto;
@@ -322,7 +324,7 @@ hr {
 
 
 /* Estilos para telas menores ou iguais a 400px */
-@media (max-width: 400px) {
+@media (max-width: 715px) {
 
   body {
     width: 100%;
@@ -490,23 +492,24 @@ hr {
   }
 
   .aboutMeContent {
-    margin: 1rem 0;
+    margin: 1rem;
   }
 
   .aboutMeContent h1 {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.3;
-    padding: 0 0 1em 1em;
+    padding-bottom: 2em;
+    text-align: center;
   }
 
   .aboutMeContent p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    text-align: center;
+    justify-content: center;
   }
-
-
 
   .image1,
   .image2 {
@@ -514,7 +517,6 @@ hr {
     height: 120px;
     padding-bottom: 1.5rem;
   }
-
 
   .skills {
     max-width: 390px;
@@ -541,15 +543,15 @@ hr {
 
   .skillsContent ul{
     padding: 1em;
+    margin: 1em;
   }
 
   .skillsContent li {
-    font-size: 15px;
+    font-size: 12px;
     padding-bottom: 1em;
   }
 
   .skillsContent span {
-
     font-size: 1em;
     text-align: right;
 
@@ -587,5 +589,298 @@ hr {
   .copyrigth h3 {
     font-size: 1em;
   }
+
+}
+
+/* Estilos para telas entre 401px e 798px */
+@media (min-width: 401px) and (max-width: 1022px) {
+
+ 
+  body {
+    max-width: 100%;
+  }
+  .logoName {
+    display: block;
+    padding: 1em;
+    color: #ccc;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .logoName:hover {
+    color: #FFFF00BF;
+  }
+
+  .logoHeader {
+    display: none;
+  }
+
+  .menuToggle {
+    display: block;
+  }
+
+  .navegationContainer {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0.5rem;
+    right: 0;
+    background-color: rgba(118, 60, 172, 0.09);
+    width: 100%;
+  }
+
+  .navegation ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navegation ul li {
+    padding: 1em;
+
+  }
+
+  .navLink {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para mostrar o menu de navegação quando o hamburguer é clicado */
+  .menuToggle.active+.navegationContainer {
+    display: block;
+    z-index: 10;
+  }
+
+  .menuToggle.active .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .menuToggle.active .hamburger::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  /* Estilos para o ícone de hamburguer */
+  .menuToggle .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    position: relative;
+  }
+
+  .menuToggle .hamburger::before,
+  .menuToggle .hamburger::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .menuToggle .hamburger::before {
+    top: -5px;
+  }
+
+  .menuToggle .hamburger::after {
+    top: 5px;
+  }
+
+  /*Main*/
+ 
+  .infoContainer,
+  .aboutMe,
+  .skills {
+    max-width: 100%;
+  }
+
+  /* Ajusta o alinhamento do texto nos elementos de conteúdo */
+  .infoText,
+  .aboutMeContent,
+  .skillsContent {
+    text-align: center;
+  }
+
+
+  .infoText {
+    width: 100%;
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  .aboutMe {
+    max-width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menuColors {
+    width: 100%;
+    padding: 1.5rem 0.5rem;
+  }
+
+  .menuColors img {
+    padding-left: .5em;
+    padding-top: 1em;
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+
+  .aboutMeContent {
+    margin: 1rem 0;
+  }
+
+  .aboutMeContent h1 {
+    font-size: 22px;
+    line-height: 1.3;
+    padding: 0 0 1em 0;
+  }
+
+  .aboutMeContent p {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 100%;
+    padding: 0;
+  }
+
+  .image1,
+  .image2 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1.5rem;
+  }
+
+  .skills {
+    width: 100vw;
+    height: auto;
+    margin: 1rem auto;
+  }
+
+  .skills h1 {
+    font-size: 28px;
+    line-height: 12.5px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+
+  .skillsContent {
+    justify-content: center;
+    
+    width: 100%;
+    height: auto;
+    margin-right: 1em;
+  }
+
+  .skillsContent ul {
+    padding: 1em;
+    font-size: 30px;
+  }
+  .skillsContent li{
+    font-size: 20px;
+  }
+
+  .skillsContent span {
+    font-size: 1em;
+    text-align: center;
+    
+  }
+
+  .icons {
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  
+  .contact {
+    justify-content: center;
+    width: 100%;
+
+  }
+
+
+ 
+  .footerNavegation ul {
+    flex-wrap: wrap;
+  }
+
+  .copyrigth h3 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 716px) and (max-width: 1041px ){
+
+  .navLink {
+    font-size: 25px;}
+
+  .infoContainer{
+    flex-direction: column;
+    margin-top: 4em;
+  }
+
+  .content{
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+
+
+  .aboutMe{
+    margin-top: 6em;
+  }
+
+  .aboutMeContent h1 {
+    font-size: 32px;
+    padding-top: 2em;
+  }
+
+  .aboutMeContent p {
+    font-size: 30px;
+    padding-top: 2em;
+  }
+
+  .images{
+    flex-direction: column;
+  }
+
+  .skills{
+    height:auto;
+  }
+
+   
+  .skills h1 {
+    font-size: 60px;
+    padding-top: 2em;
+  }
+
+  .skillsContent{
+    margin-top-top: 5rem;
+  }
+
+  .skillsContent li {
+    font-size: 26px;
+  }
+
+  .contact {
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    padding-left: 350px;
+
+  }
+
 
 }
