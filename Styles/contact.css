@@ -215,7 +215,8 @@ form input::placeholder{
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 715px) {
+
   
   .logoName{
     display: block;
@@ -343,25 +344,24 @@ form input::placeholder{
 }
 
 
-
 .contact{
-    justify-content: center;
-    width:100%;
-  }
+  justify-content: center;
+  width:100%;
+}
 .contact a {
-   
-    margin-right: 0;
-    font-size: 1em;
-  }
+ 
+  margin-right: 0;
+  font-size: 1em;
+}
 
 .footerNavegation ul{
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+}
 
 
- .copyrigth h3{
-    font-size: 1em;
-  }
+.copyrigth h3{
+  font-size: 1em;
+}
 
 
 }
