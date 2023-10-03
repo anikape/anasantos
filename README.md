@@ -1,7 +1,7 @@
-# Portífolio Ana Santos
+## Portfolio Ana Santos
 
-## Tecnologias Utilizadas
+#Projeto final do curso Desenvolvimento WEB ElasNaTech
 
-Html
-CSS
-JavaScript
+- Criação do portfolio 
+
+# Tecnologias utilizads
