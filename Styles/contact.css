@@ -370,5 +370,9 @@ form input::placeholder{
   font-size: 1em;
 }
 
+my-form-status{
+  font-size: 20px;
+}
+
 
 }
